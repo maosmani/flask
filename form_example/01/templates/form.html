@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form example
+	</title>
+</head>
+<body>
+<h1>our form will be here </h1>
+<form method="POST" action="{{url_for('form')}}">
+	{{ form.csrf_token}}
+    {{form.username.label}}
+    {{form.username}}
+    {{form.password.label}}
+    {{form.password}}
+   <input type="submit" value = "Submit">
+</form>
+</body>
+</html>
